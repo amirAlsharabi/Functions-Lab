@@ -35,6 +35,9 @@ print('------------------------')
 #
 # Define your function and call it to display the discounted price.
 
+def apply_discount(price, discount_percentage):
+    discount_amount = price * (discount_percentage / 100)
+    return price - discount_amount
 
 
 print('Exercise 2:', apply_discount(100, 25))
