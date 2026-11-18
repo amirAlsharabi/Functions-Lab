@@ -1,36 +1,41 @@
-# Exercise 0: Example
+
+# Exercise 1: Calculate Area of a Triangle
 #
-# This is a practice exercise to familiarize you with basic Python data structures.
+# Write a function named `calculate_area_triangle` that takes the base and height of a triangle and returns the area.
+# The area formula is (base * height) / 2.
 #
-# Create a list called `example_list` and append three elements to it. Print each element using a loop.
+# Examples:
+# calculate_area_triangle(10, 5) should return 25.0.
+# calculate_area_triangle(7, 3) should return 10.5.
 #
-# Requirements:
-# - The list should contain any three elements of your choice.
-# - Use a loop to print each element.
+# Define your function and call it below.
 
-def example_list_function():
-  example_list = ['element1', 'element2', 'element3']
-  for element in example_list:
-      print(element)
+def calculate_area_triangle(base, height):
+    area = (base * height) / 2
+    return area
 
-# Call the function and print each element
-example_list_function()
+print('Exercise 1:', calculate_area_triangle(10, 5))
 
 
 
 
-# Exercise 1: List and Indexing
+
+print('------------------------')
+
+
+
+# Exercise 2: Apply a Discount
 #
-# Create a list named students containing at least three student names (strings).
-# Assign the second student’s name to a variable named first_student.
-# Assign the last student’s name to a variable named last_student.
+# Write a function named `apply_discount` that takes a product's price and a discount percentage (from 0 to 100).
+# Return the new price after applying the discount.
+#
+# Examples:
+# apply_discount(100, 25) should return 75.
+# apply_discount(80, 10) should return 72.
+#
+# Define your function and call it to display the discounted price.
 
-def manage_students():
-    # your code here
-    students=['amir ','ali','omar']
-    first_student=students[1]
-    last_student=students[-1]
-    return first_student, last_student
 
-# Call the function and print the result
-print('Exercise 1:', manage_students())
+
+print('Exercise 2:', apply_discount(100, 25))
+
