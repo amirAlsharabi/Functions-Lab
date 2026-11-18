@@ -91,7 +91,7 @@ def sum_to(n):
 
 print("Exercise 4:", sum_to(6))
 
-print('------------------------')
+print("------------------------")
 
 
 # Exercise 5: Find the Largest Number
@@ -103,14 +103,14 @@ print('------------------------')
 # largest(10, 4, 2) should return 10.
 #
 # Define your function and test it with different inputs.
-def largest(num1 , num2 , num3):
-    return max(num1,num2,num3)
+def largest(num1, num2, num3):
+    return max(num1, num2, num3)
 
 
-print('Exercise 5:', largest(1, 2, 3))
+print("Exercise 5:", largest(1, 2, 3))
 
 
-print('------------------------')
+print("------------------------")
 
 
 # Exercise 6: Calculate a Tip
@@ -125,4 +125,28 @@ print('------------------------')
 def calculate_tip(bill_amount, tip_percentage):
     return bill_amount * (tip_percentage / 100)
 
-print('Exercise 6:', calculate_tip(50, 20))
+
+print("Exercise 6:", calculate_tip(50, 20))
+
+
+print("------------------------")
+
+
+# Exercise 7: Calculate Product of Numbers
+#
+# Write a function named `product` that takes an arbitrary number of numbers, multiplies them, and returns the product.
+# Review your notes on *args for handling an arbitrary number of arguments.
+#
+# Examples:
+# product(-1, 4) should return -4.
+# product(2, 5, 5) should return 50.
+#
+# Define the function and call it with different sets of numbers to test.
+def product(*args):
+    total - 1
+    for num in args:
+        total *= num
+    return total
+
+
+print("Exercise 7:", product(2, 5, 5))
