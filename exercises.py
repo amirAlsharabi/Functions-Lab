@@ -1,4 +1,3 @@
-
 # Exercise 1: Calculate Area of a Triangle
 #
 # Write a function named `calculate_area_triangle` that takes the base and height of a triangle and returns the area.
@@ -10,18 +9,16 @@
 #
 # Define your function and call it below.
 
+
 def calculate_area_triangle(base, height):
     area = (base * height) / 2
     return area
 
-print('Exercise 1:', calculate_area_triangle(10, 5))
+
+print("Exercise 1:", calculate_area_triangle(10, 5))
 
 
-
-
-
-print('------------------------')
-
+print("------------------------")
 
 
 # Exercise 2: Apply a Discount
@@ -35,16 +32,16 @@ print('------------------------')
 #
 # Define your function and call it to display the discounted price.
 
+
 def apply_discount(price, discount_percentage):
     discount_amount = price * (discount_percentage / 100)
     return price - discount_amount
 
 
-print('Exercise 2:', apply_discount(100, 25))
+print("Exercise 2:", apply_discount(100, 25))
 
 
-
-print('------------------------')
+print("------------------------")
 
 
 # Exercise 3: Convert Temperature
@@ -60,17 +57,39 @@ print('------------------------')
 # convert_temperature(32, 'F') should return 0.0.
 #
 # Define the function and then call it below.
-def convert_temperature(temp,unit):
-    if unit == 'C':
-        return (temp * 9/5) + 32
-    elif unit == 'F':
-        return (temp - 32) * 5/9
+def convert_temperature(temp, unit):
+    if unit == "C":
+        return (temp * 9 / 5) + 32
+    elif unit == "F":
+        return (temp - 32) * 5 / 9
 
 
-print('Exercise 3: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
-print('Exercise 3: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
+print("Exercise 3: Convert 0°C to Fahrenheit:", convert_temperature(0, "C"))
+print("Exercise 3: Convert 32°F to Celsius:", convert_temperature(32, "F"))
 
+
+print("------------------------")
+
+
+# Exercise 4: Sum to N
+#
+# Write a function named `sum_to` that takes a single integer n and returns the sum of all integers from 1 to n.
+#
+# Examples:
+# sum_to(6) should return 21.
+# sum_to(10) should return 55.
+#
+# Define the function and then call it below.
+
+
+def sum_to(n):
+    total = 0
+    for number in range(1, n + 1):
+        total += number
+    return total
+
+
+print("Exercise 4:", sum_to(6))
 
 print('------------------------')
-
 
